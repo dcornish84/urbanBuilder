@@ -50,6 +50,17 @@ namespace Planner
             Console.WriteLine(Elmer.Description);
             Console.WriteLine(Soleil.Description);
 
+            City MeowMeowTropolis = new City("CatsVille", "Garfield", 1176);
+            MeowMeowTropolis.BuildingList.Add(Leeloo);
+            MeowMeowTropolis.BuildingList.Add(Ludo);
+            MeowMeowTropolis.BuildingList.Add(Elmer);
+            MeowMeowTropolis.BuildingList.Add(Soleil);
+
+            foreach (Building building in MeowMeowTropolis.BuildingList)
+            {
+                Console.WriteLine(building.Description);
+            }
+
         }
     }
 }
